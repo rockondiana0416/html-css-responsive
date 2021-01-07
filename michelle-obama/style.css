@@ -30,44 +30,25 @@ nav ul{
 
 nav li{
     display: flex;
-    /*display: inline-block;*/
     font-family: 'Cinzel', serif;
-    /*font-weight: bold;*/
     padding: 3em;
 }
 
 nav a{
     color: white;
-    display: block;
-    /*width: 100px;
-    font-size: 24px;*/
     font-size: 1.5rem;
     text-decoration: none;
     padding: .25em 0;
 }
 
-nav a:hover,
-nav a:focus {
-    
-}
-
 #img-div {
     max-width: 100%;
+    text-align: center;
     margin: auto;
-    /*padding: 0px 395px 0px 395px;*/
-    /*padding: 0% 33.33% 0% 33.33%;*/
-}
-
-#michelle-obama-image {
-    /*height: auto;
-    max-width: 590px;
-    display: block;*/
-    
 }
 
 #img-caption {
     color: white;
-    /*font-size: 20px;*/
     font-size: 1.25rem;
     line-height: 1em;
     margin: auto;
@@ -80,13 +61,9 @@ section {
     border: 1px solid black;
     padding: 1%;
     margin: 1%;
-    
-    /*float: right;*/
     text-align: center;
     display: flex;
   }
-
-
 
 .full-width { 
     padding: 3%;
@@ -94,18 +71,12 @@ section {
 }
 
 .half-width {
-    /*float: left;*/
     color: white;
     font-size: 1.25rem;
-    /*max-width: 45%;*/
-    /*padding: 30px;*/
     width: 50%;
-    padding: 5%;
+    padding: 1em;
 }
 
-/*#tribute-link {
-    color: #ff2037;
-}*/
 ul{
     padding: 0 0 0 30px;
 }
@@ -117,13 +88,11 @@ li {
 a {
     color: #ff2037;
 }
+
 .garden, 
 .harry, 
 .girls {
     border: 10px solid #bf0c3d;
-    /*display: flex;*/
-    /*height: 350px;
-    width: 525px;*/
     max-width: 100%;
     width: 100%
 }
@@ -136,30 +105,147 @@ footer {
   line-height: 150%
 }
 
-@media (max-width: 600px) {
+
+/********
+    Media Queries
+        ********/
+
+/**********using em = 768px**********/
+
+@media screen and (max-width: 48em) {
+    header {
+        font-size: 1rem;
+        border: 2px solid #bf0c3d;
+    }
+    
+    nav li{
+        padding: .5em;
+    }
+    
+    nav a{
+        font-size: 1rem;
+        padding: .25em 0;
+    }
+    
+    body {
+        background: none;
+    }
+    
+    section {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    
+    #michelle-obama-image {
+        width: 75%;
+        padding: 0;
+    }
+    
+    #img-caption {
+    font-size: 1rem;
+    line-height: 1em;
+    margin: auto;
+    width: 60%;
+    }
+    
     .full-width {
         flex-direction: column;
     }
+    
     .half-width {
-        width: 90%;
+        font-size: 1rem;
+        padding-left: 5.5em;
+        width: 75%;
     }
     
+    .garden, 
+    .harry, 
+    .girls {
+        border: 3px solid #bf0c3d;
+        padding-bottom: 1rem;
+    }
+    
+    ul {
+        padding: 0 1em;
+    }
+    
+    footer {
+        padding: 0;
+        font-size: .1rem;
+    }
 }
 
-@media (max-width: 675px) {
+
+/**********using em = 480px**********/
+
+@media screen and (max-width: 30em) {
+    header {
+        font-size: .5rem;
+        border: 1px solid #bf0c3d;
+    }
+    
     nav ul {
         flex-direction: column;
-        /*justify-content: center;*/
     }
+    
     nav li {
+        display: flex;
         padding: 0;
         justify-content: center;
     }
     
+    nav a {
+        font-size: .3rem;
+        padding: 0;
+    }
+    
+    #michelle-obama-image {
+        width: 95%;
+        padding: .5em
+    }
+    
+    body {
+        background: none;
+    }
+    
+    section {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    
+    #img-caption {
+        font-size: .3rem;
+        line-height: .6rem;
+        padding: 0 1.5em;
+        margin: 0;
+        width: 95%;
+    }
+    
+    .full-width {
+        flex-direction: column;
+    }
+    
+    .half-width {
+        font-size: .3rem;
+        padding: 0 3em;
+        width: 90%;
+    }
+    
+    .garden, 
+    .harry, 
+    .girls {
+        border: 1px solid #bf0c3d;
+    }
+    
+    ul,
+    li {
+        padding: 0 1em; 
+    }
+    
+    footer {
+        padding: 0;
+        font-size: .1rem;
+    }
 }
-
-
-
-
-
-  
