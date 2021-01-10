@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Cantarell', sans-serif;
+}
+
+/********Typography********/
+h1 {
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 2rem;
+    margin: 0;
+    font-size: 1rem;
+    
+}
+
+/********Layout********/
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    /*flex-direction: column;*/
+    
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    /*flex-direction: column;*/
+}
+
+header {
+    
+    background: #f8f8f8;
+    padding: 2em 0;
+    /*flex-direction: column;*/
+}
+
+/*navigation*/
+
+nav ul {
+    list-style: none;
+    /*text-decoration: none;*/
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+}
+
+nav li {
+    margin-left: 2em;
+    /*text-decoration: none;*/
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+/********Images********/
+
+.article-image {
+    width 714px;
+    height: 308px;
+}
+
+/********Media Queries********/
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header {
+        /*text-align: center;*/
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: .5em 0;
+    }
+}
+
