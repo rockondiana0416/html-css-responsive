@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+.header-image {
+    width: 300px;
+    padding-left: 2em;
+}
+
+.image {
+    border: 1px solid #4adee2;
+    height: 200px;
+    width: 200px;
+    background: #fe8cc7;
+    padding: 2em;
+    margin-left: 3.5em;
+}
+
+/********Typography********/
+
+h1 {
+    border: 5px solid #4adee2;
+    color: #d11394;
+    font-family: 'Righteous', cursive;
+      /*font-size: 3rem;*/
+      /*margin: auto;*/
+    text-align: center;
+    /*width: 100%;*/
+    /*margin-left: .5em;*/
+    
+}
+
+h2 {
+    font-family: 'Luckiest Guy', cursive;
+    /*font-size: 35px;*/
+    color: #4adee2;
+    text-align: center;
+    /*display: flex;
+    flex-direction: row;*/
+    padding: .5em 0;
+}
+
+/********Navigation********/
+
+nav a {
+    color: #d11394;
+    text-decoration: none;
+    /*display: flex;
+    flex-direction: row;*/
+    font-family: 'Luckiest Guy', cursive;
+    /*justify-content: center;*/
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    padding: .1em 0;
+}
+
+nav {
+    background: #fef6eb;
+    border: 1px solid #4adee2;
+    margin-bottom: 1em;
+    /*margin-left: 1em;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*padding: 20px 0px 20px 0px;*/
+    /*flex-direction: row;*/
+}
+
+/********Layout********/
+
+#container {
+    background: #fef6eb;
+    border: 1px solid #4adee2;
+    /*margin-left: 1em;*/
+}
+
+.box {
+    /*padding: 2em;*/
+}
+
+p {
+    background: white;
+    border: 1px solid #4adee2;
+    color: #d11394;
+    /*display: flex;*/
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    /*width: 100%;*/
+}
+
+footer {
+    background: #4adee2;
+    /*padding: 40px 595px 40px 595px;*/
+    text-align: center;
+}
+
+/********Media Queries********/
+
+@media (min-width: 675px) {
+    .header-image {
+        display: block;
+        height: 250px;
+        margin: auto;
+        width: auto;
+    }
+    
+    h1 {
+        border: 10px solid #4adee2;
+    }
+    
+    #nav {
+        display: flex;
+        justify-content: center;
+  
+}
+    
+    .image {
+        height: 300px;
+        width: 275px;
+    }
+
+}
+  
