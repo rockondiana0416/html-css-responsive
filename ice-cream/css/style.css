@@ -22,8 +22,6 @@ h1 {
     border: 5px solid #4adee2;
     color: #d11394;
     font-family: 'Righteous', cursive;
-      /*font-size: 3rem;*/
-      /*margin: auto;*/
     text-align: center;
     /*width: 100%;*/
     /*margin-left: .5em;*/
@@ -93,12 +91,21 @@ p {
 footer {
     background: #4adee2;
     /*padding: 40px 595px 40px 595px;*/
+    color: white;
     text-align: center;
+    font-family: 'Righteous', cursive;
 }
 
 /********Media Queries********/
 
 @media (min-width: 675px) {
+    
+    .image {
+        height: 300px;
+        width: 275px;
+        /*display: flex;*/
+    }
+    
     .header-image {
         display: block;
         height: 250px;
@@ -107,19 +114,50 @@ footer {
     }
     
     h1 {
+        font-size: 5rem;
         border: 10px solid #4adee2;
     }
     
-    #nav {
+    nav ul {
         display: flex;
-        justify-content: center;
-  
-}
-    
-    .image {
-        height: 300px;
-        width: 275px;
+        justify-content: space-around;
+        font-size: 2rem;
     }
-
+    
+    nav {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #container {
+        display: flex;
+        /*max-width: 95%;*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3em;
+    }
+    
+    .box {
+        width: 30%;
+        justify-content: center;
+    }
+    
+    p {
+        justify-content: center;
+        /*padding: 1em;*/
+        margin-left: 3em;
+        /*justify-content: center;
+        margin-right: 2em;*/
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    footer {
+        padding: 2em;
+        font-size: 1em;
+    }
 }
   
